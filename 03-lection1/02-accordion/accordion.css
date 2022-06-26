@@ -34,10 +34,12 @@ summary::-webkit-details-marker {
 	display: none;
 }
 
-details summary:before {
-	content: 'V';
-	font-size: 20px;
-	font-weight: 300;
-	color: gray;
-	margin-right: 7px;
+summary .marker {
+	display: inline-block;
+	padding-right: 0.5em;
 }
+
+details[open] .marker {
+	transform: rotate(90deg);
+}
+
