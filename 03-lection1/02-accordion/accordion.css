@@ -1,1 +1,34 @@
 /* Стилизация аккордеона */
+.accordeon {
+	margin:20px;
+}
+
+.accordeon__item {
+	border:1px solid gray;
+	border-radius:10px;
+	padding: 30px;
+	margin-bottom: 8px;
+}
+
+.accordeon__item:last-child {
+	margin-bottom: 0;
+}
+
+.accordeon__title {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+ }
+
+ details summary:before {
+	content: 'V';
+	font-size: 20px;
+	font-weight: 300;
+	color:gray;
+	margin-right: 7px;
+ }
+  
