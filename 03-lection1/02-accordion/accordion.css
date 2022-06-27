@@ -1,13 +1,13 @@
 /* Стилизация аккордеона */
 
-@import '../assets/css/main.css';
-
 .accordeon {
 	font-family: 'Inter', sans-serif;
-	line-height: 150%;
-	margin: 20px;
-	width: 730px;
-	height: 144px;
+	line-height: 1.5;
+	max-width:730px;
+	}
+
+.accordeon__margin {
+	margin: 20px; 
 }
 
 .accordeon__item {
@@ -30,20 +30,20 @@
 	color: #495057;
 }
 
-summary::-webkit-details-marker {
+.accordeon__title::-webkit-details-marker {
 	display: none;
 }
 
-summary .marker {
+.accordeon__title .marker {
 	display: inline-block;
 	padding-right: 0.5em;
 }
 
-details[open] .marker {
+.accordeon__block[open] .marker {
 	transform: rotate(90deg);
 }
 
-details[open] .accordeon__text {
+.accordeon__block[open] .accordeon__text {
 margin:0;
 margin-top: 16px;
 margin-bottom: 8px;
