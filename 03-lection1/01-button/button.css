@@ -1,12 +1,15 @@
 /* Стилизация кнопки */
 
 .btn {
+	font-family: 'Roboto';
+	line-height: 1.2;
 	padding: 15px 66px;
 	font-size: 15px;
 	font-weight: 500;
-	color: #fff;
+	color: var(--background-main);
 	border: 0;
 	border-radius: 8px;
+	cursor: pointer;
 	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
@@ -15,19 +18,12 @@
 }
 
 .btn_primary:hover {
-	background: #2342C0;
-	cursor:pointer;
+	background: var(--primary-hover);
 }
 
 .btn_primary:focus {
-	background: #2342C0;
-	cursor:pointer;
-	border:0;
-}
-.btn_primary:disabled {
-	background: #4263EB;
-	opacity: 0.5;
-	cursor:not-allowed;
+	background:var(--primary-hover);
+	outline: none;
 }
 
 .btn_secondary {
@@ -35,28 +31,23 @@
 }
 
 .btn_secondary:hover {
-	background: #5028C6;
-	cursor:pointer;
-}
-
-.btn_secondary:disabled {
-	background: #7048E8;
-	opacity: 0.5;
-	cursor:not-allowed;
+	background: var(--secondary-hover);
 }
 
 .btn_alternate {
-	background-color: #fff;
-	border: 1px solid #ACB5BD;
-	color: #495057;
+	background-color: var(--background-main);
+	border: 1px solid var(--alternate-border);
+	color: var(--alternate-text);
 }
 
 .btn_alternate:hover {
-	border: 1px solid #212429;
-	cursor:pointer;
+	border: 1px solid var(--font-primary);
+
 }
 
+.btn_primary:disabled,
+.btn_secondary:disabled,
 .btn_alternate:disabled {
-	opacity: 0.3;
-	cursor:not-allowed;
+	opacity: 0.5;
+	pointer-events: none;
 }
