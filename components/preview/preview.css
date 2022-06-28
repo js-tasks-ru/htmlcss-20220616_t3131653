@@ -1,0 +1,13 @@
+
+.preview {
+		background-color: var(--background-secondary);
+	padding:68px 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+.preview__inner {
+	display: flex;
+	flex-wrap: wrap;
+	gap:30px;
+}
