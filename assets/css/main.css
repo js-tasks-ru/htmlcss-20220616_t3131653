@@ -1,3 +1,4 @@
+@import './normalize.css';
 @import '../fonts/fonts.css';
 
 :root {
@@ -12,12 +13,33 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
+    --lite-1:#E2E6E8;
+    --lite-2:#F3F5F5;
+    --lite-3:#E3E7EA;
+
+
     --error: var(--red);
     --success: var(--blue);
 
     --primary: var(--blue);
     --secondary: var(--purple);
-}
+    
+
+    --font-primary: var(--black);
+    --background-main: var(--white);
+
+    --primary-hover:var(--blue-2);
+    --secondary-hover:var(--purple-2);
+
+    --alternate-border:var(--grey-3);
+    --alternate-text:var(--grey-4);
+
+    --background-skeleton:var(--grey-2);
+    --secondary-skeleton:var(--grey-3);
+    
+    --gradient-skeleton-1:var(--lite-1);
+    --gradient-skeleton-2:var(--lite-2);
+    --gradient-skeleton-3:var(--lite-3);
 
 * {
     font-family: 'Roboto', sans-serif;
