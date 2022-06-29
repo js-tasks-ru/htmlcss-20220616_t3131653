@@ -25,6 +25,8 @@
 
     --font-primary: var(--black);
     --background-main: var(--white);
+
+    --arrow:var(--grey-4);
 }
 
 * {
