@@ -1,21 +1,16 @@
-.histogram-wrapper {
-	width: 354px;
-	margin: 0 auto;
-}
-
 .histogram {
 	font-family: 'Inter';
 	display: flex;
 	flex-direction: column;
-	width: 354px;
 	border: 1px solid var(--alternate-border);
 	border-radius: 8px;
+	padding: 16px 24px 24px;
 }
 
 .histogram__top {
 	display: flex;
 	justify-content: space-between;
-	padding: 16px 24px 0;
+	
 }
 
 .histogram__title {
@@ -36,21 +31,20 @@
 	text-align: right;
 	color: var(--background-histogram);
 	padding-top: 3px;
+	}
+.histogram__link {
+	text-decoration:none;
 }
 
 .histogram__chart {
 	display: flex;
 	align-items: flex-end;
+	gap: 1px;
 	height: 50px;
-	margin: 39px 29px 24px 26px;
+	padding-top:39px;
 }
 
 .histogram__column {
 	background: var(--background-histogram);
-	margin-right: 1px;
 	flex: 0 1 9px;
-}
-
-.histogram__column:last-child {
-	padding-right: 0;
 }
