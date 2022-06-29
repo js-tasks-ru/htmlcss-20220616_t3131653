@@ -30,21 +30,19 @@
 	display: none;
 }
 
-.accordeon__title .marker {
-	display: inline-block;
-	padding-right: 0.5em;
-}
+
 
 .accordeon__marker {
-width: 10px;
-height: 10px;
-border-top:1px solid var(--arrow);
-border-right: 1px solid var(--arrow);
-transform: rotate(-45deg);
-position: absolute;
-top: 32px;
-right:32px;
-cursor:pointer;
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid var(--arrow);
+	border-right: 1px solid var(--arrow);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 32px;
+	right: 32px;
+	cursor: pointer;
 }
 
 .accordeon__item[open] .accordeon__marker {
