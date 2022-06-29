@@ -40,6 +40,7 @@
     --gradient-skeleton-1:var(--lite-1);
     --gradient-skeleton-2:var(--lite-2);
     --gradient-skeleton-3:var(--lite-3);
+}
 
 * {
     font-family: 'Roboto', sans-serif;
