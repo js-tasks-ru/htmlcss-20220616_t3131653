@@ -1,3 +1,4 @@
+@import './normalize.css';
 @import '../fonts/fonts.css';
 
 :root {
@@ -5,18 +6,38 @@
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
+    --purple-2: #5028C6;
     --blue: #374FC7;
+    --blue-2:#2342C0;
+    --blue-3:#4263EB;
+
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5:#C4C4C4;
 
     --error: var(--red);
     --success: var(--blue);
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --font-primary: var(--black);
+    --background-main: var(--white);
+
+    --primary-hover:var(--blue-2);
+    --secondary-hover:var(--purple-2);
+
+    --alternate-border:var(--grey-3);
+    --alternate-text:var(--grey-4);
+
+    /* --background-histogram:var(--blue-3); */
+
+    --main-element:var(--blue-3);
+
+    --background-element:var(--grey-5);
 }
 
 * {
