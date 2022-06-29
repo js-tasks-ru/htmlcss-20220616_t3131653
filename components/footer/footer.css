@@ -1,5 +1,4 @@
-footer {
-	/* height: 300px; */
+.footer {
 	background: var(--background-main);
 	color: var(--font-primary);
 	font-family: 'Inter';
