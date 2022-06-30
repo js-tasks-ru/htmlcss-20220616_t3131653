@@ -29,9 +29,6 @@
 .accordeon__title::-webkit-details-marker {
 	display: none;
 }
-
-
-
 .accordeon__marker {
 	display: block;
 	width: 10px;
