@@ -2,12 +2,15 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto 1fr;
-	}
+	grid-column-gap: 56px;
+}
 
 .sidebar {
-	width: 450px;
-	}
+	width: 394px;
+}
 
 .content__main {
 	background: var(--background-main);
 }
+
+.content__inner {}
