@@ -1,13 +1,5 @@
-@import 'normalize.css';
+@import './normalize.css';
 @import '../fonts/fonts.css';
-
-
-@import '../../components/page/page.css';
-@import '../../components/header/header.css';
-@import '../../components/preview/preview.css';
-@import '../../components/container/container.css';
-@import '../../components/card/card.css';
-@import '../../components/footer/footer.css';
 
 :root {
     --white: #ffffff;
@@ -17,13 +9,13 @@
     --purple-2: #5028C6;
     --blue: #374FC7;
     --blue-2:#2342C0;
+    --blue-3:#4263EB;
 
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
-    --grey-5:#F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
@@ -33,15 +25,18 @@
 
     --font-primary: var(--black);
     --background-main: var(--white);
-    --background-secondary:var(--grey-5);
 
     --primary-hover:var(--blue-2);
     --secondary-hover:var(--purple-2);
 
     --alternate-border:var(--grey-3);
     --alternate-text:var(--grey-4);
+
+    --background-histogram:var(--blue-3);
 }
+
 
 * {
     font-family: 'Roboto', sans-serif;
 }
+
