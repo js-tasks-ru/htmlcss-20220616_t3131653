@@ -1,0 +1,13 @@
+.content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	}
+
+.sidebar {
+	width: 450px;
+	}
+
+.content__main {
+	background: var(--background-main);
+}

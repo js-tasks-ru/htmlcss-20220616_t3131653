@@ -1,7 +1,12 @@
 
 .header {
 	padding: 96px 0 77px;
-	background: var(--background-main);
+	/* background: var(--background-main); */
+}
+
+.header_layout {
+height: 82px;
+background:transparent;
 }
 
 .header__title {
