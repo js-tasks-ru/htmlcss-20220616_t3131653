@@ -11,6 +11,7 @@
 
 @import '../../components/layout/layout.css';
 @import '../../components/content/content.css';
+@import '../../components/sidebar/sidebar.css';
 
 :root {
     --white: #ffffff;
@@ -20,6 +21,7 @@
     --purple-2: #5028C6;
     --blue: #374FC7;
     --blue-2:#2342C0;
+    --blue-3:#4263EB;
 
     --red: #F03D3E;
     --grey-1: #F8F9FA;
@@ -36,14 +38,17 @@
 
     --font-primary: var(--black);
     --background-main: var(--white);
-    --background-secondary:var(--grey-5);
+    --background-secondary: var(--grey-5);
 
     --primary-hover:var(--blue-2);
     --secondary-hover:var(--purple-2);
 
     --alternate-border:var(--grey-3);
     --alternate-text:var(--grey-4);
+
+    --background-histogram:var(--blue-3);
 }
+
 
 * {
     font-family: 'Roboto', sans-serif;

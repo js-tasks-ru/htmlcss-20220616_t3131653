@@ -5,10 +5,6 @@
 	grid-column-gap: 56px;
 }
 
-.sidebar {
-	width: 394px;
-}
-
 .content__main {
 	background: var(--background-main);
 }

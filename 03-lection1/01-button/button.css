@@ -45,9 +45,7 @@
 
 }
 
-.btn_primary:disabled,
-.btn_secondary:disabled,
-.btn_alternate:disabled {
+.btn:disabled {
 	opacity: 0.5;
 	pointer-events: none;
 }
