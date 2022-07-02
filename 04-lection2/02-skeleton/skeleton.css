@@ -23,7 +23,7 @@
 .skeleton__block-lines {
 	display: flex;
 	flex-direction: column;
-	width: 515px;
+	flex-grow: 1;
 	gap: 8px;
 	margin: 8px 0 32px 16px;
 }
