@@ -24,10 +24,11 @@
     --secondary: var(--purple);
 
     --font-primary: var(--black);
+    --font-secondary:var(--grey-4);
     --background-main: var(--white);
 
 
-    --arrow:var(--grey-4);
+   
 
     --background-secondary:var(--grey-5);
 

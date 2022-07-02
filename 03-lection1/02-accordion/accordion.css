@@ -6,8 +6,7 @@
 }
 
 .accordeon__item {
-	border: 1px solid gray;
-	border-radius: 10px;
+	border: 1px solid var(--alternate-border);
 	padding: 24px 32px;
 	margin-bottom: 8px;
 	position: relative;
@@ -19,11 +18,11 @@
 
 .accordeon__title {
 	display: block;
-	color: #212429;
+	color: var(--font-primary);
 }
 
 .accordeon__text {
-	color: #495057;
+	color: var(--font-secondary);
 }
 
 .accordeon__title::-webkit-details-marker {
@@ -33,8 +32,8 @@
 	display: block;
 	width: 10px;
 	height: 10px;
-	border-top: 1px solid var(--arrow);
-	border-right: 1px solid var(--arrow);
+	border-top: 1px solid  var(--font-secondary);
+	border-right: 1px solid  var(--font-secondary);
 	transform: rotate(-45deg);
 	position: absolute;
 	top: 32px;
