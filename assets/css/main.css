@@ -16,6 +16,7 @@
 :root {
     --white: #ffffff;
     --black: #212429;
+    --black-2:#000000;
     --pink: #F784AD;
     --purple: #7048E8;
     --purple-2: #5028C6;
@@ -47,6 +48,7 @@
     --alternate-text:var(--grey-4);
 
     --background-histogram:var(--blue-3);
+    --menu-title:var(--black-2);
 }
 
 
