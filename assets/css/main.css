@@ -23,6 +23,7 @@
     --blue: #374FC7;
     --blue-2:#2342C0;
     --blue-3:#4263EB;
+    --blue-4:#A0B1F5;
 
     --red: #F03D3E;
     --grey-1: #F8F9FA;
@@ -30,6 +31,10 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5:#F9FAFC;
+<<<<<<< HEAD
+=======
+    --grey-6:#90A0B7;
+>>>>>>> 810ad4edcae2b152c58037754f11fcd9bb0ef2e6
 
     --error: var(--red);
     --success: var(--blue);
@@ -47,9 +52,17 @@
     --alternate-border:var(--grey-3);
     --alternate-text:var(--grey-4);
 
+<<<<<<< HEAD
     --background-histogram:var(--blue-3);
     --menu-title:var(--black-2);
 }
+=======
+    --title-primary:var(--black-2);
+    --font-secondary:var(--grey-6);
+    --active-background:var(--blue-3);
+    --active-color:var(--white);
+    }
+>>>>>>> 810ad4edcae2b152c58037754f11fcd9bb0ef2e6
 
 
 * {
