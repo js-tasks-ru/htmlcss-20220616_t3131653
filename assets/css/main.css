@@ -7,11 +7,7 @@
     --black-2:#334D6E;
     --pink: #F784AD;
     --purple: #7048E8;
-    --purple-2: #5028C6;
     --blue: #374FC7;
-    --blue-2:#2342C0;
-    --blue-3:#4263EB;
-    --blue-4:#A0B1F5;
 
     --red: #F03D3E;
     --grey-1: #F8F9FA;
@@ -21,11 +17,17 @@
     --grey-5:#F9FAFC;
     --grey-6:#90A0B7;
 
+    --lite-1:#E2E6E8;
+    --lite-2:#F3F5F5;
+    --lite-3:#E3E7EA;
+
+
     --error: var(--red);
     --success: var(--blue);
 
     --primary: var(--blue);
     --secondary: var(--purple);
+    
 
     --font-primary: var(--black);
     --background-main: var(--white);
@@ -36,14 +38,17 @@
     --alternate-border:var(--grey-3);
     --alternate-text:var(--grey-4);
 
-    --title-primary:var(--black-2);
-    --font-secondary:var(--grey-6);
-    --active-background:var(--blue-3);
-    --active-color:var(--white);
-    }
+    --background-skeleton:var(--grey-2);
+    --secondary-skeleton:var(--grey-3);
+    
+    --gradient-skeleton-1:var(--lite-1);
+    --gradient-skeleton-2:var(--lite-2);
+    --gradient-skeleton-3:var(--lite-3);
+}
 
 
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
