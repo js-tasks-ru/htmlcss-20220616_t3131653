@@ -1,7 +1,5 @@
 /* Стилизация кнопки */
 
-<<<<<<< HEAD
-=======
 .btn {
 	font-family: 'Roboto';
 	line-height: 1.2;
@@ -51,4 +49,3 @@
 	opacity: 0.5;
 	pointer-events: none;
 }
->>>>>>> 6e5531b12fc15946024a90e6d199b348aa14de7a
