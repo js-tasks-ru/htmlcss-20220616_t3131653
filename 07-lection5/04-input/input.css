@@ -7,10 +7,14 @@
 
 .input {
 	display: inline-flex;
-	flex-basis: 40%;
+	/* flex-basis: 40%; */
 	flex-direction: column;
 	padding-bottom: 16px;
-	}
+}
+
+.input__block {
+	position: relative;
+}
 
 .input__field {
 	background: #FFFFFF;
@@ -39,6 +43,23 @@
 	text-transform: uppercase;
 	color: #ACB5BD;
 	padding-bottom: 5px;
+}
+
+.input__icon {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	transform: translateY(-50%);
+}
+
+.input__icon_success {
+	color: #374FC7;
+}
+
+.input__icon_error {
+	color: #F03D3E;
 }
 
 .input_success .input__field::placeholder {
