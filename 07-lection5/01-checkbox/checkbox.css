@@ -1,10 +1,4 @@
-.checkbox-block {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
-
-.checkbox-block__title {
+.title {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 500;
