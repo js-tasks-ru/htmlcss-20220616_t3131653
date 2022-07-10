@@ -8,46 +8,46 @@
 </head>
 
 <body>
-    <form class="form-group" action="#">
-        <label class="input">
-            <div class="input__title">Label</div>
+    <div class="input">
+        <div class="input__title">Label</div>
+        <input type="text" class="input__field" placeholder="Placeholder">
+
+    </div>
+
+
+    <div class="input input_focus">
+        <div class="input__title">Focus</div>
+        <input type="text" class="input__field" placeholder="Filled input">
+
+    </div>
+
+    <div class="input input_success">
+        <div class="input__title">Success</div>
+        <div class="input__block">
             <input type="text" class="input__field" placeholder="Placeholder">
 
-        </label>
-
-    
-        <label class="input input_focus">
-            <div class="input__title">Focus</div>
-            <input type="text" class="input__field" placeholder="Filled input">
-
-        </label>
-        <label class="input input_success">
-            <div class="input__title">Success</div>
-            <div class="input__block">
-            <input type="text" class="input__field" placeholder="Placeholder">
-                        
             <svg class="input__icon input__icon_success">
                 <use href="../../assets/images/icons/sprite.svg#success"></use>
             </svg>
         </div>
-        </label>
+    </div>
 
-        <label class="input input_invalid">
-            <div class="input__title">Error</div>
-            <div class="input__block">
+    <div class="input input_invalid">
+        <div class="input__title">Error</div>
+        <div class="input__block">
             <input type="text" class="input__field" placeholder="Error">
             <svg class="input__icon input__icon_error">
                 <use href="../../assets/images/icons/sprite.svg#error"></use>
             </svg>
         </div>
-        </label>
+    </div>
 
-        <label class="input input_disabled">
-            <div class="input__title">Disabled</div>
-            <input type="text" disabled class="input__field" placeholder="Disabled">
+    <div class="input input_disabled">
+        <div class="input__title">Disabled</div>
+        <input type="text" disabled class="input__field" placeholder="Disabled">
 
-        </label>
-    </form>
+    </div>
+
 </body>
 
 </html>
