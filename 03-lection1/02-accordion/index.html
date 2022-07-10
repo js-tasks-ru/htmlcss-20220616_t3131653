@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./accordion.css">
+</head>
+
+<body>
+    <div class="accordeon">
+        
+                    
+            <details class="accordeon__item">
+                <div class="accordeon__marker"></div>
+                <summary class="accordeon__title">
+                    <div class="accordeon__marker"></div>
+                    СМИ рассказали о переезде в Южную Америку нескольких сотен российских IT-специалистов
+                </summary>
+                <p class="accordeon__text">
+                    По информации Financial Times, с начала марта нескольких сотен российских IT-специалистов,
+                    инженеров, основателей стартапов и цифровых кочевников-разработчиков переехали в страны Южной
+                    Америки. Они пошли на это из-за простых правил въезда, спокойного отношения латиноамериканских стран
+                    к западным санкциям против РФ и высокого спроса в этом регионе на квалифицированных IT-специалистов
+                    и инженерные кадры.
+                </p>
+
+            </details>
+                          
+            <details class="accordeon__item">
+                <summary class="accordeon__title">
+                    <div class="accordeon__marker"></div>
+                    Ключевое слово «volatile» C/C++
+                </summary>
+                <p class="accordeon__text">
+                    Volatile — ключевое слово языков C/C++, которое информирует компилятор о том, что значение
+                    переменной может меняться из вне и что компилятор не будет оптимизировать эту переменную.
+                </p>
+            </details>
+        
+    </div>
+
+
+</body>
+
 </html>
