@@ -4,7 +4,9 @@
 }
 
 .tooltip__trigger {
-
+	top: 60px;
+	left: 60px;
+	position: absolute;
 }
 
 .tooltip__bubble {
@@ -18,28 +20,28 @@
 	font-family: 'Inter';
 	line-height: 1.5;
 	text-align: center;
-/* 	
+
 	position: absolute;
-	left:50%;
-	bottom:calc(100% + 8px);
-	transform: translateX(-50%);  */
+	left: 35px;
+	/* bottom: calc(100% + 8px);
+	left: 50%;
+	transform: translateX(-50%); */
 
 }
+
 .tooltip__bubble:after {
-	content:"";
+	content: "";
 	width: 0;
 	height: 0;
-	border:10px solid transparent;
+	border: 10px solid transparent;
 	border-top: 5px solid var(--active-background);
 	position: absolute;
-	top:100%;
-	left:50%;
+	top: 100%;
+	left: 50%;
 	transform: translateX(-50%);
 
 }
 
 .tooltip__trigger:hover~.tooltip__bubble {
 	display: block;
-	}
-
-
+}
