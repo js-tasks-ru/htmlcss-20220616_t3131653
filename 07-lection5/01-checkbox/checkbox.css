@@ -28,7 +28,7 @@
 .checkbox__control {
 	width: 28px;
 	height: 28px;
-	border: 1px solid var(--alternate-checkbox);
+	border: 1px solid var(--main-control);
 	border-radius: 4px;
 	position: relative;
 	cursor: pointer;
@@ -47,12 +47,12 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
-	color: var(--cheeckbox-label);
+	color: var(--label-control);
 }
 
 .checkbox__input:checked~.checkbox__state .checkbox__control {
-	background: var(--checkbox-checked);
-	border: 1px solid var(--checkbox-checked);
+	background: var(--checked-control);
+	border: 1px solid var(--checked-control);
 }
 
 .checkbox__input:focus~.checkbox__state .checkbox__title {
@@ -60,7 +60,7 @@
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__control {
-	background: var(--alternate-checkbox);
+	background: var(--main-control);
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__icon {
@@ -68,5 +68,5 @@
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__title {
-	color: var(--alternate-checkbox);
+	color: var(--main-control);
 }

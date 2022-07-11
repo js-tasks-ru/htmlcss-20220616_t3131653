@@ -47,9 +47,9 @@
     --gradient-skeleton-3:var(--lite-3);
 
     --subtitle:var(--grey-3);
-    --alternate-checkbox:var(--grey-2);
-    --cheeckbox-label:var(--grey-4);
-    --checkbox-checked:var(--blue-2);
+    --main-control:var(--grey-2);
+    --label-control:var(--grey-4);
+    --checked-control:var(--blue-2);
 }
 
 
