@@ -3,10 +3,12 @@
 	display: grid;
 	grid-template-columns: auto 1fr;
 	grid-column-gap: 56px;
+
 }
 
 .content__main {
 	background: var(--background-main);
+	
 }
 
 .content__inner {}

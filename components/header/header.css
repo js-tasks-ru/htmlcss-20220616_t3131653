@@ -1,11 +1,9 @@
 
 .header {
-	height: 237px;
 	background: var(--background-main);
 }
 
 .header_layout {
-height: 88px;
 background:transparent;
 }
 
