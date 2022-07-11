@@ -65,8 +65,8 @@
 }
 
 .toggler__input:checked~.toggler__state .toggler__control {
-	background: var(--focus-control);
-	border: 1px solid var(--focus-control);
+	background: var(--checked-control);
+	border: 1px solid var(--checked-control);
 }
 
 .toggler__input:checked~.toggler__state .toggler__switcher {

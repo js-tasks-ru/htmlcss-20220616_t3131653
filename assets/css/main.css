@@ -57,7 +57,7 @@
     --alternate-control:var(--grey-3);
     --main-control:var(--grey-2);
     --label-control:var(--grey-4);
-    --focus-control:var(--blue-2);
+    --checked-control:var(--blue-2);
 }
 
 
