@@ -1,4 +1,4 @@
-.title {
+/* .title {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 500;
@@ -7,7 +7,7 @@
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: var(--subtitle);
-}
+} */
 
 .checkbox {
 	display: flex;
