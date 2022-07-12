@@ -1,0 +1,54 @@
+.tabs {}
+
+.tabs__input {}
+
+
+.tabs__scroller {
+	display: flex;
+	gap: 40px;
+	border: 1px solid red;
+}
+
+.tabs__switcher {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid green;
+}
+
+.tabs__title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	color: #ACB5BD;
+}
+
+
+.tabs__control {
+opacity: 0;
+}
+
+.tabs__input:checked .tabs__scroller .tabs__switcher .tabs__title {
+	color: #212429;
+}
+
+.tabs__input:checked .tabs__scroller .tabs__switcher .tabs__control {
+	width: 46px;
+	height: 5px;
+	background: #212429;
+}
+
+.tabs__scroller {}
+
+.tabs__content {}
+
+.tabs__content_complex {
+	color: blue
+}
+
+.tabs__content_simple {
+	color: red;
+}
