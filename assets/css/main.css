@@ -31,7 +31,14 @@
     
 
     --font-primary: var(--black);
+    --font-secondary:var(--grey-4);
     --background-main: var(--white);
+
+
+   
+
+    --background-secondary:var(--grey-5);
+
 
     --primary-hover:var(--blue-2);
     --secondary-hover:var(--purple-2);
@@ -57,4 +64,3 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-

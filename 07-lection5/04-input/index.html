@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Страница с полем ввода -->
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+</head>
+
+<body>
+    <div class="input">
+        <label for="input1" class="input__title">Label</label>
+        <input type="text" class="input__field" id="input1" placeholder="Placeholder">
+
+    </div>
+
+
+    <div class="input input_focus">
+        <label for="input2" class="input__title">Focus</label>
+        <input type="text" class="input__field" id="input2" placeholder="Filled input">
+
+    </div>
+
+    <div class="input input_success">
+        <label for="input3" class="input__title">Success</label>
+        <div class="input__block">
+            <input type="text" class="input__field" id="input3" placeholder="Placeholder">
+
+            <svg class="input__icon input__icon_success">
+                <use href="../../assets/images/icons/sprite.svg#success"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div class="input input_invalid">
+        <label for="input4" class="input__title">Error</label>
+        <div class="input__block">
+            <input type="text" class="input__field" id="input4" placeholder="Error">
+            <svg class="input__icon input__icon_error">
+                <use href="../../assets/images/icons/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div class="input input_disabled">
+        <label for="input5" class="input__title">Disabled</label>
+        <input type="text" disabled class="input__field" id="input5" placeholder="Disabled">
+
+    </div>
+
+</body>
+
+</html>
