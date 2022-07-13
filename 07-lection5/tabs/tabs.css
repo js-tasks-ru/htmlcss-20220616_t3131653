@@ -1,18 +1,20 @@
-.tabs {}
+.tabs {
+	position: relative;
+}
 
-.tabs__input {}
-
+.tabs__input {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
 
 .tabs__scroller {
 	display: flex;
 	gap: 40px;
-	border: 1px solid red;
 }
 
 .tabs__switcher {
 	display: flex;
 	flex-direction: column;
-	border: 1px solid green;
 }
 
 .tabs__title {
@@ -23,32 +25,67 @@
 	line-height: 1.5;
 	display: flex;
 	align-items: center;
-	color: #ACB5BD;
+	color: var(--subtitle);
+	padding-bottom: 8px;
 }
-
 
 .tabs__control {
-opacity: 0;
-}
-
-.tabs__input:checked .tabs__scroller .tabs__switcher .tabs__title {
-	color: #212429;
-}
-
-.tabs__input:checked .tabs__scroller .tabs__switcher .tabs__control {
-	width: 46px;
 	height: 5px;
-	background: #212429;
 }
 
-.tabs__scroller {}
-
-.tabs__content {}
-
-.tabs__content_complex {
-	color: blue
+.tabs__line {
+	max-width: 100%;
+	height: 1px;
+	background: var(--alternate-line);
+	margin: 0;
 }
 
-.tabs__content_simple {
-	color: red;
+.tabs__main {
+	padding: 50px;
 }
+
+.tabs__content {
+	padding-bottom: 30px;
+}
+
+.tabs__content_complex {}
+
+.tabs__content_simple {}
+
+#all-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_all {
+	color: var(--font-primary);
+}
+
+#all-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_all~.tabs__control {
+	width: 120px;
+	background: var(--font-primary);
+}
+
+#complex-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_complex {
+	color: var(--font-primary);
+}
+
+#complex-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_complex~.tabs__control {
+	width: 68px;
+	background: var(--font-primary);
+}
+
+#simple-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_simple {
+	color: var(--font-primary);
+}
+
+#simple-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_simple~.tabs__control {
+	width: 53px;
+	background: var(--font-primary);
+}
+
+#complex-tab:checked~.tabs__main .tabs__content_simple {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+#simple-tab:checked~.tabs__main .tabs__content_complex {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+

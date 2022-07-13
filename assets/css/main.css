@@ -57,6 +57,8 @@
     --main-control:var(--grey-2);
     --label-control:var(--grey-4);
     --checked-control:var(--blue-2);
+
+    --alternate-line:var(--grey-2);
 }
 
 
