@@ -38,6 +38,7 @@
 
 	position: relative;
 	cursor: pointer;
+	
 }
 
 .toggler__switcher {
@@ -49,7 +50,8 @@
 	top: 50%;
 	left: 2px;
 	transform: translateY(-50%);
-}
+	transition: all .5s ease;
+	}
 
 .toggler__title {
 	font-family: 'Inter';
@@ -71,7 +73,7 @@
 
 .toggler__input:checked~.toggler__state .toggler__switcher {
 	background: var(--background-main);
-	left: 26px;
+	left: 25px;
 }
 
 .toggler__input:disabled~.toggler__state .toggler__title {
