@@ -1,0 +1,25 @@
+.content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-column-gap: 56px;
+
+}
+
+.content__main {
+	background: var(--background-main);
+	
+}
+
+.content__inner {}
+
+.content__title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 1.36;
+	color: var(--alternate-text);
+	margin: 0;
+	padding: 32px 0 0 48px;
+}
