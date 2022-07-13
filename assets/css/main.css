@@ -65,13 +65,10 @@
     --gradient-skeleton-2:var(--lite-2);
     --gradient-skeleton-3:var(--lite-3);
 
-    --alternate-control:var(--grey-2);
-    --title-control:var(--grey-3);
-    --success-control:var(--blue);
-    --error-control:var(--red);
-    --placeholder-control:var(--grey-4);
-    --focus-control:var(--blue-2);
-
+    --subtitle:var(--grey-3);
+    --main-control:var(--grey-2);
+    --label-control:var(--grey-4);
+    --checked-control:var(--blue-2);
 }
 
 
