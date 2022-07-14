@@ -20,6 +20,7 @@
 	padding:24px 0;
 }
 
+
 .burger__mode:before {
 	content: '';
 	display: block;
@@ -44,6 +45,7 @@
 
 }
 
+}
 
 
 
