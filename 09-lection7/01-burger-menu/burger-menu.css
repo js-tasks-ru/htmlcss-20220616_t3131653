@@ -1,13 +1,13 @@
 .burger {
 	margin: 0 16px;
+	position: fixed;
+	left: -100vw;
+	transition: all .5s ease;
 }
 
-.burger__icons {
-
-}
-.burger__icon {
-	width: 24px;
-	height: 24px;
+.burger[data-open="open"] {
+	position: relative;
+	left: 0;
 }
 
 .burger__nav {
@@ -15,9 +15,7 @@
 }
 
 .burger__mode {
-	display: flex;
-	justify-content: space-between;
-	padding:24px 0;
+	padding: 24px 0;
 }
 
 
@@ -30,21 +28,20 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-}
+	}
 
-.burger__subtitle {
+	.toggler_burger {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.toggler__title_burger {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #495057;
-}
-
-.burger__switcher {
-
-}
-
 }
 
 

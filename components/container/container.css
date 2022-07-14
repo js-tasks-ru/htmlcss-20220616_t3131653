@@ -1,4 +1,17 @@
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.container_flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width:375px) {
+	.container_flex {
+		justify-content: center;
+	}
+
 }
