@@ -1,5 +1,6 @@
 @import './normalize.css';
 @import '../fonts/fonts.css';
+@import '../../components/menu/menu.css';
 
 :root {
     --white: #ffffff;
@@ -66,4 +67,7 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }

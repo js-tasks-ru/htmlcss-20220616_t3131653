@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
 
-    </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./burger-menu.css">
+    <script defer src="./burger-menu.js"></script>
+</head>
+
+<body>
+    <div class="burger">
+        <div class="burger__icons">
+            <svg class="burger__icon" id="burger-menu-open">
+                <use xlink:href="../../assets/images/icons/sprite.svg#burger"></use>
+            </svg>
+
+            <svg class="burger__icon" id="burger-menu-close">
+                <use xlink:href="../../assets/images/icons/sprite.svg#cross"></use>
+            </svg>
+  
+        </div>
+
+        <div class="burger__nav">
+            <div class="burger__mode">
+                <div class="burger__subtitle">
+                    Dark mode
+                </div>
+                <div class="burger__switcher">
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <div class="menu__list">
+                    <h4 class="menu__title">Elements</h4>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                </div>
+                <div class="menu__list">
+
+                    <h4 class="menu__title">Containers</h4>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                </div>
+                <div class="menu__list">
+                    <h4 class="menu__title">Templates</h4>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                </div>
+
+        </div>
+    </div>
+</body>
+
 </html>
