@@ -1,0 +1,7 @@
+.layout {
+	height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-row-gap: 30px;
+	background: var(--background-secondary);
+}

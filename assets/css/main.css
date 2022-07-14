@@ -1,10 +1,22 @@
 @import './normalize.css';
 @import '../fonts/fonts.css';
 
+
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/preview/preview.css';
+@import '../../components/container/container.css';
+@import '../../components/card/card.css';
+@import '../../components/footer/footer.css';
+
+@import '../../components/layout/layout.css';
+@import '../../components/content/content.css';
+@import '../../components/sidebar/sidebar.css';
+
 :root {
     --white: #ffffff;
     --black: #212429;
-    --black-2:#334D6E;
+    --black-2:#000000;
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #374FC7;
@@ -16,7 +28,6 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5:#F9FAFC;
-    --grey-6:#90A0B7;
 
     --lite-1:#E2E6E8;
     --lite-2:#F3F5F5;
@@ -31,7 +42,15 @@
     
 
     --font-primary: var(--black);
+    --font-secondary:var(--grey-4);
     --background-main: var(--white);
+    --background-secondary: var(--grey-5);
+
+
+   
+
+    --background-secondary:var(--grey-5);
+
 
     --primary-hover:var(--blue-2);
     --secondary-hover:var(--purple-2);
@@ -58,3 +77,6 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}

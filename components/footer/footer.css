@@ -5,6 +5,11 @@
 	text-align: center;
 }
 
+.footer_layout {
+	background: transparent;
+	padding: 56px 0;
+	}
+
 .footer__inner {
 	padding: 72px 0 136px;
 	margin: 0 auto;

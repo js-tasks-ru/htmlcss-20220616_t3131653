@@ -1,7 +1,10 @@
 
 .header {
-	padding: 96px 0 77px;
 	background: var(--background-main);
+}
+
+.header_layout {
+background:transparent;
 }
 
 .header__title {
@@ -12,4 +15,5 @@ font-size: 50px;
 line-height: 1.28;
 color: var(--font-primary);
 margin: 0;
+padding: 96px 0 77px;
 }
