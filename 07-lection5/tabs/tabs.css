@@ -7,7 +7,7 @@
 	clip: rect(0, 0, 0, 0);
 }
 
-.tabs__scroller {
+.tabs__switchers {
 	display: flex;
 	gap: 40px;
 }
@@ -31,6 +31,8 @@
 
 .tabs__control {
 	height: 5px;
+	width: 100%;
+
 }
 
 .tabs__line {
@@ -38,10 +40,11 @@
 	height: 1px;
 	background: var(--alternate-line);
 	margin: 0;
+
 }
 
 .tabs__main {
-	padding: 50px;
+	padding-top: 50px;
 }
 
 .tabs__content {
@@ -52,40 +55,36 @@
 
 .tabs__content_simple {}
 
-#all-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_all {
+#all-tab:checked~.tabs__scroller .container .tabs__switchers .tabs__switcher .tabs__title_all {
 	color: var(--font-primary);
 }
 
-#all-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_all~.tabs__control {
-	width: 120px;
+#all-tab:checked~.tabs__scroller .container .tabs__switchers .tabs__switcher .tabs__title_all~.tabs__control {
 	background: var(--font-primary);
 }
 
-#complex-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_complex {
+#complex-tab:checked~.tabs__scroller .container .tabs__switchers .tabs__switcher .tabs__title_complex {
 	color: var(--font-primary);
 }
 
-#complex-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_complex~.tabs__control {
-	width: 68px;
+#complex-tab:checked~.tabs__scroller .container .tabs__switchers .tabs__switcher .tabs__title_complex~.tabs__control {
+
 	background: var(--font-primary);
 }
 
-#simple-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_simple {
+#simple-tab:checked~.tabs__scroller .container .tabs__switchers .tabs__switcher .tabs__title_simple {
 	color: var(--font-primary);
 }
 
-#simple-tab:checked~.tabs__scroller .tabs__switcher .tabs__title_simple~.tabs__control {
-	width: 53px;
+#simple-tab:checked~.tabs__scroller .container .tabs__switchers .tabs__switcher .tabs__title_simple~.tabs__control {
+
 	background: var(--font-primary);
 }
 
-#complex-tab:checked~.tabs__main .tabs__content_simple {
-	position: absolute;
-	clip: rect(0, 0, 0, 0);
+#complex-tab:checked~.tabs__main .container .tabs__content_simple {
+	display: none;
 }
 
-#simple-tab:checked~.tabs__main .tabs__content_complex {
-	position: absolute;
-	clip: rect(0, 0, 0, 0);
+#simple-tab:checked~.tabs__main .container .tabs__content_complex {
+	display: none;
 }
-
