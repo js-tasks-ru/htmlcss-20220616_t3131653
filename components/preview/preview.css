@@ -3,7 +3,8 @@
 		background-color: var(--background-secondary);
 	padding:68px 0;
 	font-size: 0;
-	overflow: hidden;
+	flex-grow: 1;
+
 }
 
 .preview__inner {
