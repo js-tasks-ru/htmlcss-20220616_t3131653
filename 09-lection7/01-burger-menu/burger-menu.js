@@ -21,7 +21,3 @@ if (menuClose) {
         }
     });
 }
-
-console.log(menu);
-console.log(menuClose);
-console.log(menuOpen);

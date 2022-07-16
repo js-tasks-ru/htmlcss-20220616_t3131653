@@ -1,17 +1,20 @@
 .burger {
-	margin: 0 16px;
 	position: fixed;
+	/* top:0; */
 	left: -100vw;
+	height: 100vh;
 	transition: all .5s ease;
 }
 
 .burger[data-open="open"] {
-	position: relative;
+	/* position: relative; */
 	left: 0;
 }
 
 .burger__nav {
 	position: relative;
+	margin: 0 16px;
+
 }
 
 .burger__mode {
