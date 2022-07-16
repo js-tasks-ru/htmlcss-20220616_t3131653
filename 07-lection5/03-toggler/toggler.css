@@ -87,3 +87,20 @@
 .toggler__input:disabled~.toggler__state .toggler__switcher {
 	background: var(--alternate-control);
 }
+
+
+
+
+.toggler_burger {
+	display: flex;
+	justify-content: space-between;
+}
+
+.toggler__title_burger {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #495057;
+}
