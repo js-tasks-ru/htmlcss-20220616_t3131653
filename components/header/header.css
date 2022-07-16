@@ -56,18 +56,16 @@
 
 
 .header__lite {
-	display: block;
 	width: 24px;
 	height: 24px;
-	border: 1px solid red;
-}
+	color: #495057;
+	}
 
 .header__dark {
 	width: 24px;
 	height: 24px;
-	color: #495057;
-	border: 2px solid #495057;
-}
+	color: #ACB5BD;
+	}
 
 
 
