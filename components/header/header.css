@@ -39,12 +39,12 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #ACB5BD;
+	color: var(--alternate-control);
 	text-decoration: none;
 }
 
 .header__item:hover {
-	color: #212429;
+	color: var( --font-primary);
 }
 
 .header__themes {}
@@ -58,13 +58,13 @@
 .header__lite {
 	width: 24px;
 	height: 24px;
-	color: #495057;
+	color: var(--font-secondary);
 	}
 
 .header__dark {
 	width: 24px;
 	height: 24px;
-	color: #ACB5BD;
+	color: var(--alternate-control);
 	}
 
 
