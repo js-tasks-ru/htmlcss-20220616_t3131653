@@ -71,7 +71,13 @@
     --alternate-control:var(--grey-2);
     --primary-label:var(--grey-4);
     --control-checked:var(--blue-2);
+
+    --main-control:var(--grey-2);
+    --label-control:var(--grey-4);
+    --checked-control:var(--blue-2);
+    --alternate-control:var(--grey-3);
 }
+
 
 
 * {

@@ -100,7 +100,7 @@
 	}
 
 	#burger-menu-close[data-open="open"]~.header__circle {
-		background: #DDE2E5;
+		background: var(--main-control);
 		border-radius: 50%;
 		width: 32px;
 		height: 32px;
