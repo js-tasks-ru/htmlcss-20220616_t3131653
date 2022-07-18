@@ -4,6 +4,45 @@
 	background: var(--background-main);
 	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 	border-radius: 12px;
-	background-color:var(--background-main);
+	background-color: var(--background-main);
 	font-size: 16px;
+}
+
+.preview__card {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.card__item {
+	border: 1px solid red;
+	flex: 1 0 auto;
+		display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.card__name {
+	font-family: 'Roboto';
+	font-style: normal;
+	color: var(--font-primary);
+	padding: 25px 0 38px;
+	/* flex: 0 0 auto; */
+
+}
+
+.card__title {
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 1.2;
+
+	padding-bottom: 6px;
+}
+
+.card__subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
 }

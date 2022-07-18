@@ -1,11 +1,15 @@
 .header {
 	background: var(--background-main);
+	padding: 24px 0 30px;
 }
 
 .header_layout {
 	background: transparent;
-	padding: 24px 0 30px;
+}
 
+.header__top {
+	display: flex;
+	justify-content: space-between;
 }
 
 .header__title {
@@ -16,7 +20,7 @@
 	line-height: 1.28;
 	color: var(--font-primary);
 	margin: 0;
-	padding: 96px 0 77px;
+	padding: 38px 0 40px;
 }
 
 .header__logo {}
@@ -44,7 +48,7 @@
 }
 
 .header__item:hover {
-	color: var( --font-primary);
+	color: var(--font-primary);
 }
 
 .header__themes {}
@@ -59,13 +63,13 @@
 	width: 24px;
 	height: 24px;
 	color: var(--font-secondary);
-	}
+}
 
 .header__dark {
 	width: 24px;
 	height: 24px;
 	color: var(--alternate-control);
-	}
+}
 
 
 

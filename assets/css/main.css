@@ -14,6 +14,9 @@
 @import '../../components/content/content.css';
 @import '../../components/sidebar/sidebar.css';
 
+@import '../../07-lection5/03-toggler/toggler.css';
+@import '../../05-lection3/01-tooltip/tooltip.css';
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -47,6 +50,8 @@
     --font-secondary:var(--grey-4);
     --background-main: var(--white);
     --background-secondary: var(--grey-5);
+    --active-background:var(--blue-2);
+
 
 
    

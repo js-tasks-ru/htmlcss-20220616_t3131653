@@ -1,9 +1,11 @@
 .tooltip {
 	position: relative;
 	display: inline-block;
-}
+	}
 
 .tooltip__trigger {
+width: 24px;
+height: 24px;
 
 }
 
@@ -13,7 +15,7 @@
 	background: var(--active-background);
 	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 	border-radius: 10px;
-	color: var(--background-main);
+	color: var(--main-control);
 
 	font-family: 'Inter';
 	line-height: 1.5;
