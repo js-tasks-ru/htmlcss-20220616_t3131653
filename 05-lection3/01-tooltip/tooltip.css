@@ -1,12 +1,17 @@
 .tooltip {
 	position: relative;
 	display: inline-block;
-	}
+}
+.tooltip_preview {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
 
 .tooltip__trigger {
-width: 24px;
-height: 24px;
-
+	width: 24px;
+	height: 24px;
 }
 
 .tooltip__bubble {
@@ -20,12 +25,16 @@ height: 24px;
 	font-family: 'Inter';
 	line-height: 1.5;
 	text-align: center;
+	white-space: nowrap;
 
 	position: absolute;
 	bottom: calc(100% + 8px);
 	left: 50%;
 	transform: translateX(-50%);
+}
 
+.tooltip__bubble_preview {
+	display: block;
 }
 
 .tooltip__bubble:after {
@@ -42,5 +51,5 @@ height: 24px;
 }
 
 .tooltip__trigger:hover~.tooltip__bubble {
-	display: block;
+	display: block
 }
