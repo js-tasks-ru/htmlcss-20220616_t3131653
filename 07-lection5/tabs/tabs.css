@@ -44,11 +44,11 @@
 }
 
 .tabs__main {
-	padding-top: 50px;
+	padding: 50px 0 30px;
 }
 
 .tabs__content {
-	padding-bottom: 30px;
+
 }
 
 .tabs__content_complex {}
