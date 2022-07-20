@@ -1,8 +1,8 @@
 .calendar {
 	background: var(--background-main);
-	max-width: 304px;
+	max-width: 350px;
 	width: 100%;
-	padding: 28px 26px 40px;
+	/* padding: 28px 26px 40px; */
 	border: 1px solid #ACB5BD;
 	border-radius: 8px;
 }
