@@ -1,4 +1,24 @@
 .burger {
+	
+}
+
+
+
+.burger__icons {
+	position: absolute;
+	top: 20px;
+	left: 16px;
+	z-index: 5;
+}
+
+.burger__icon {
+	display: none;
+	width: 24px;
+	height: 24px;
+	color: var(--font-secondary);
+}
+
+.burger__nav {
 	position: fixed;
 	top: 0;
 	left: -100vw;
@@ -9,12 +29,9 @@
 	transition: all .5s ease;
 }
 
-.burger[data-open="open"] {
-	position: relative;
+.burger[data-open="open"] .burger__nav {
 	left: 0;
 }
-
-.burger__nav {}
 
 .burger__divider {
 	width: 100%;
@@ -23,6 +40,30 @@
 }
 
 .burger__mode {
+	margin-top: 80px;
 	padding: 24px 0;
 	pointer-events: auto;
+}
+
+@media screen and (max-width:375px) {
+
+	.burger__icons {
+		display: block;
+	}
+
+	.burger__icon[data-open="open"] {
+		display: block;
+
+	}
+
+	#burger-menu-close[data-open="open"]~.burger__circle {
+		background: var(--main-control);
+		border-radius: 50%;
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		top: -4px;
+		left: -4px;
+		z-index: -1;
+	}
 }
