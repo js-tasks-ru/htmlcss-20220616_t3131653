@@ -10,6 +10,10 @@
 	left: 0;
 	right: 0;
 }
+.modal_preview {
+position: relative;
+}
+
 
 .modal__window {
 	background-color: var(--background-main);
@@ -27,6 +31,7 @@
 	position: absolute;
 	top: 15px;
 	right: 23px;
+	width: ;
 }
 
 .modal__cross:before,

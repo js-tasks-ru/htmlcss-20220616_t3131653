@@ -5,7 +5,11 @@
 	border: 1px solid var(--alternate-border);
 	border-radius: 8px;
 	padding: 16px 24px 24px;
-}
+	}
+
+	.histogram_preview {
+		width: 300px;
+	}
 
 .histogram__top {
 	display: flex;
@@ -41,10 +45,10 @@
 	align-items: flex-end;
 	gap: 1px;
 	height: 50px;
-	padding-top:39px;
+	margin-top:39px;
 }
 
 .histogram__column {
-	background: var(--background-histogram);
-	flex: 0 1 9px;
+	background: var(--active-background);
+	flex: 1 1 9px;
 }
