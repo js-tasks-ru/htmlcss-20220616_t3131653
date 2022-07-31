@@ -25,6 +25,8 @@
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../06-lection4/01-avatar/avatar.css';
 
+@import '../../07-lection5/tabs/tabs.css';
+
 
 :root {
     --white: #ffffff;
@@ -100,4 +102,8 @@
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+body {
+    /* width: 100%;
+    height: 100%; */
 }
