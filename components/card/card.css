@@ -11,11 +11,15 @@
 	align-items: center;
 	position: relative;
 	padding: 40px;
+	text-decoration: none;
+}
+.card_modal{
+	padding: 25px 40px;
 }
 
 
 .card__item {
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 	/* width: 100%; */
 	/* height: 100%; */
 	/* border: 1px solid red; */
@@ -33,6 +37,7 @@
 	display: flex;
 	gap: 52px;
 }
+
 
 .card__wrapper {
 	display: flex;

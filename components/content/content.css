@@ -11,7 +11,9 @@
 	
 }
 
-.content__inner {}
+.content__inner {
+
+}
 
 .content__title {
 	font-family: 'Inter';
@@ -22,4 +24,7 @@
 	color: var(--alternate-text);
 	margin: 0;
 	padding: 32px 0 0 48px;
+}
+.content__element {
+	margin: 80px 0 0 70px;
 }
