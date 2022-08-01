@@ -4,7 +4,6 @@
 	left: -100vw;
 	height: 100vh;
 	padding: 0 16px;
-
 	width: 100vw;
 	transition: all .5s ease;
 	}
@@ -16,17 +15,21 @@
 	z-index: 5;
 }
 
-#burger-menu-open {
+/* #burger-menu-open {
 	position: absolute;
 	top: 0;
 	left: 100vw;
-}
+} */
 
 .burger__icon {
 	display: none;
 	width: 24px;
 	height: 24px;
 	color: var(--font-secondary);
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* left: 100vw; */
 }
 
 .burger__nav {
@@ -36,6 +39,9 @@
 .burger[data-open="open"] {
 	left: 0;
 }
+
+
+
 
 .burger__divider {
 	width: 100%;
