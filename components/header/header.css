@@ -23,7 +23,10 @@
 	padding: 38px 0 40px;
 }
 
-.header__logo {}
+.header__logo {
+	width: 110px;
+	height: 32px;
+	}
 
 .header__nav {
 	display: flex;

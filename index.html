@@ -7,16 +7,13 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="page" data-theme-dark>
         <header class="header">
             <div class="container">
                 <div class="header__top">
                     <div class="header__logo">
-                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect y="1" width="30" height="30" fill="#212429" />
-                            <rect x="38" width="32" height="32" rx="16" fill="#212429" />
-                            <path d="M78 0L110 32H78V0Z" fill="#212429" />
+                        <svg>
+                            <use xlink:href="../assets/images/icons/sprite.svg#logo"></use>
                         </svg>
 
                     </div>
@@ -40,7 +37,7 @@
                                     <input type="checkbox" class="toggler__input">
                                     <div class="toggler__state">
                                         <div class="toggler__control">
-                                            <div class="toggler__switcher"></div>
+                                            <div class="toggler__switcher" id="theme-changer"></div>
                                         </div>
 
                                     </div>
