@@ -5,3 +5,5 @@ changer.addEventListener('change', function() {
     html.toggleAttribute('data-theme-dark');
 });
  
+console.log(changer);
+console.log(3);

@@ -26,7 +26,8 @@
 .header__logo {
 	width: 110px;
 	height: 32px;
-	}
+	color: var(--main-icon);
+}
 
 .header__nav {
 	display: flex;
