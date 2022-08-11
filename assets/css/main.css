@@ -1,6 +1,6 @@
 @import './normalize.css';
 @import '../fonts/fonts.css';
-@import '../../components/container/container.css';
+@import '../../components/menu/menu.css';
 
 
 @import '../../components/page/page.css';
@@ -67,20 +67,23 @@
     --gradient-skeleton-2:var(--lite-2);
     --gradient-skeleton-3:var(--lite-3);
 
-    
+    --subtitle:var(--grey-3);
+    --alternate-control:var(--grey-2);
+    --primary-label:var(--grey-4);
+    --control-checked:var(--blue-2);
+
     --main-control:var(--grey-2);
     --label-control:var(--grey-4);
     --checked-control:var(--blue-2);
-
-    --alternate-line:var(--grey-2);
+    --alternate-control:var(--grey-3);
 }
+
 
 
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }

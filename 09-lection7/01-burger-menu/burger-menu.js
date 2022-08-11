@@ -5,7 +5,9 @@ const menuOpen = document.getElementById('burger-menu-open');
 if (menuOpen) {
     menuOpen.addEventListener('click', function() {
         if (menu) {
-            menu.setAttribute('data-open', '');
+            menu.setAttribute('data-open', 'open');
+            menuClose.setAttribute('data-open', 'open');
+            menuOpen.removeAttribute('data-open');
         }
     });
 }
@@ -14,6 +16,8 @@ if (menuClose) {
     menuClose.addEventListener('click', function() {
         if (menu) {
             menu.removeAttribute('data-open');
+            menuClose.removeAttribute('data-open');
+            menuOpen.setAttribute('data-open', 'open');
         }
     });
 }

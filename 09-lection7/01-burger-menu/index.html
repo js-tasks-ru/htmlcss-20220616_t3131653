@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
 
-    </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./burger-menu.css">
+    <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+    <script defer src="./burger-menu.js"></script>
+</head>
+
+<body>
+    <div class="header header_layout">
+        <div class="container container_flex">
+            <svg class="header__icon"  id="burger-menu-open" data-open="open">
+                <use xlink:href="../../assets/images/icons/sprite.svg#burger"></use>
+            </svg>
+            <div class="header__logo">
+                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="1" width="30" height="30" fill="#212429" />
+                    <rect x="38" width="32" height="32" rx="16" fill="#212429" />
+                    <path d="M78 0L110 32H78V0Z" fill="#212429" />
+                </svg>
+
+            </div>
+           
+        </div>
+    </div>
+    
+    <div class="burger" id="burger-menu">
+        
+
+        <div class="burger__icons">
+            <!-- <svg class="burger__icon" id="burger-menu-open" data-open="open">
+                
+            </svg> -->
+           
+
+
+            <svg class="burger__icon" id="burger-menu-close">
+                <use xlink:href="../../assets/images/icons/sprite.svg#cross"></use>
+            </svg>
+            <div class="burger__circle"></div>
+
+        </div>
+        <div class="burger__nav">
+            <div class="burger__divider"></div>
+            <div class="burger__mode">
+               
+                    <label class="toggler toggler_burger">
+                        <div class="toggler__title toggler__title_burger"> Dark mode</div>
+                        <input type="checkbox" class="toggler__input">
+                        <div class="toggler__state">
+                            <div class="toggler__control">
+                                <div class="toggler__switcher"></div>
+                            </div>
+                           
+                        </div>
+                    </label>
+                
+            </div>
+
+            <nav class="menu">
+                <div class="menu__list">
+                    <h4 class="menu__title">Elements</h4>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                </div>
+                <div class="menu__list">
+
+                    <h4 class="menu__title">Containers</h4>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                </div>
+                <div class="menu__list">
+                    <h4 class="menu__title">Templates</h4>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                    <a href="#" class="menu__item-menu">Avatar</a>
+                    <a href="#" class="menu__item-menu">Custom form elements</a>
+                    <a href="#" class="menu__item-menu">Button</a>
+                </div>
+
+        </div>
+    </div>
+</body>
+
 </html>
