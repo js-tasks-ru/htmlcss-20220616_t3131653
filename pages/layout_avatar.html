@@ -10,7 +10,8 @@
 	<script>hljs.highlightAll();</script>
 
 	<link href="/assets/css/tricolore.css" rel="stylesheet" type="text/css">
-  <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+	<script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+
 
 </head>
 
@@ -98,16 +99,13 @@
 					</aside>
 					<main class="content__main">
 						<div class="content__inner">
-							<h3 class="content__title">Tooltip</h3>
+							<h3 class="content__title">Avatar</h3>
 							<div class="content__element">
-								<div class="tooltip">
-									<div class="tooltip__trigger">
-										<svg class="tooltip__icon">
-											<use xlink:href="../assets/images/icons/sprite.svg#question"></use>
-										</svg>
+								<div class="avatar">
+									<div class="avatar__background">
+											<img src="../../assets/images/avatar/avatar-200.jpg" alt="avatar" class="avatar__image">
 									</div>
-									<div class="tooltip__bubble">Text</div>
-								</div>
+							</div>
 							</div>
 
 							<div class="content__code">
@@ -142,80 +140,32 @@
 
 											<div class="tabs__content tabs__content_html">
 												<pre><code data-language="html">
-&lt;div class="tooltip"&gt;
-  &lt;div class="tooltip__trigger"&gt;
-    &lt;svg class="tooltip__icon"&gt;
-      &lt;use xlink:href="../assets/images/icons/sprite.svg#question"&gt;
-      &lt;/use&gt;
-    &lt;/svg&gt;
+
+&lt;div&gt; class="avatar"&gt;
+  &lt;div&gt; class="avatar__background"&gt;
+    &lt;img src="../../assets/images/avatar/avatar-200.jpg" alt="avatar" class="avatar__image"&gt;
   &lt;/div&gt;
-  &lt;div class="tooltip__bubble"&gt;Text&lt;/div&gt;
 &lt;/div&gt;
-
-
 												</code></pre>
 
 											</div>
 
 											<div class="tabs__content tabs__content_css">
 												<pre><code data-language="css">
- .tooltip {
-  position: relative;
-  display: inline-block;
- }
+.avatar {}
 
- .tooltip_preview {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
-													
- .tooltip__trigger {
-  width: 24px;
-  height: 24px;
- }
-  .tooltip__icon{
+.avatar__background {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar__image {
   width: 100%;
   height: 100%;
- }
-													
- .tooltip__bubble {
-  display: none;
-  padding: 13px 21px;
-  background: var(--active-background);
-  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-  border-radius: 10px;
-  color: var(--main-control);
-  font-family: 'Inter';
-  line-height: 1.5;
-  text-align: center;
-  white-space: nowrap;
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
- }
-													
- .tooltip__bubble_preview {
-  display: block;
- }
-													
- .tooltip__bubble:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top: 5px solid var(--active-background);
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  object-fit: cover;
 }
-													
- .tooltip__trigger:hover~.tooltip__bubble {
-  display: block
- }
   											</code></pre>
 											</div>
 										</div>

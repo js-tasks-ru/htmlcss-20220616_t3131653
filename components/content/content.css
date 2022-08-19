@@ -8,11 +8,11 @@
 
 .content__main {
 	background: var(--background-main);
-	
+
 }
 
 .content__inner {
-position: relative;
+	position: relative;
 }
 
 .content__title {
@@ -25,9 +25,28 @@ position: relative;
 	margin: 0;
 	padding: 32px 0 0 48px;
 }
+
 .content__element {
+	margin: 58px 0 64px 48px;
+}
+
+.content__element_tooltip {
 	margin: 80px 0 64px 70px;
 }
+
+.content__forms {
+	display: flex;
+	gap: 80px;
+	padding-bottom: 50px;
+}
+
+.content__form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
 .content__code {
+
 	/* padding:68px 48px; */
 }

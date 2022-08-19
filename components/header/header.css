@@ -66,7 +66,7 @@
 .header__lite {
 	width: 24px;
 	height: 24px;
-	color: var(--font-secondary);
+	color: var(--alternate-control);
 }
 
 .header__dark {

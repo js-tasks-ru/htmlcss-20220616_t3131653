@@ -54,3 +54,15 @@
 	opacity: 0.5;
 	pointer-events: none;
 }
+
+.btn_modal {
+	text-decoration: none;
+}
+
+.modal:target {
+	display: flex;
+	color:red;
+	}
+/* .modal:target {
+	display: flex;
+} */

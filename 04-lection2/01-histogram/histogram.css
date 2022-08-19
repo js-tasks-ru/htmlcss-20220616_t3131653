@@ -14,7 +14,6 @@
 .histogram__top {
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 .histogram__title {
@@ -35,7 +34,8 @@
 	text-align: right;
 	color: var(--background-histogram);
 	padding-top: 3px;
-	}
+}
+
 .histogram__link {
 	text-decoration:none;
 }

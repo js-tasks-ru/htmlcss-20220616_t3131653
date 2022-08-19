@@ -1,14 +1,24 @@
-
 .preview {
-		background-color: var(--background-secondary);
-	padding:68px 0;
-	font-size: 0;
-	flex-grow: 1;
+	/* background-color: var(--background-secondary); */
+	/* padding:68px 0; */
+	/* font-size: 0;
+	flex-grow: 1; */
 
 }
 
+.preview__content {
+	background-color: var(--background-secondary);
+	padding: 68px 0 92px 0;
+}
+.preview__content_all {
+	display: none;
+}
+
+.preview__content_elements {
+	display: none;
+}
 .preview__inner {
 	display: flex;
 	flex-wrap: wrap;
-	gap:30px;
-	}
+	gap: 30px;
+}

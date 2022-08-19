@@ -10,7 +10,8 @@
 	<script>hljs.highlightAll();</script>
 
 	<link href="/assets/css/tricolore.css" rel="stylesheet" type="text/css">
-  <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+	<script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+
 
 </head>
 
@@ -98,16 +99,20 @@
 					</aside>
 					<main class="content__main">
 						<div class="content__inner">
-							<h3 class="content__title">Tooltip</h3>
+							<h3 class="content__title" id="modal">Calendar form elements</h3>
 							<div class="content__element">
-								<div class="tooltip">
-									<div class="tooltip__trigger">
-										<svg class="tooltip__icon">
-											<use xlink:href="../assets/images/icons/sprite.svg#question"></use>
-										</svg>
-									</div>
-									<div class="tooltip__bubble">Text</div>
-								</div>
+							  <a class="btn btn_primary btn_modal" href="#modal">Open modal</a>
+    <div class="modal">
+        <div class="modal__window">
+            <div class="modal__cross"></div>
+            <div class="modal__title">Modal title</div>
+            <div class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+        </div>
+
+    </div>
 							</div>
 
 							<div class="content__code">
@@ -121,7 +126,7 @@
 											<div class="tabs__switchers">
 
 												<div class="tabs__switcher">
-													<label for="html-tab" class="tabs__title tabs__title_html">HTML</label>
+<label for="html-tab" class="tabs__title tabs__title_html">HTML</label>
 													<div class="tabs__control"></div>
 
 												</div>
@@ -142,16 +147,17 @@
 
 											<div class="tabs__content tabs__content_html">
 												<pre><code data-language="html">
-&lt;div class="tooltip"&gt;
-  &lt;div class="tooltip__trigger"&gt;
-    &lt;svg class="tooltip__icon"&gt;
-      &lt;use xlink:href="../assets/images/icons/sprite.svg#question"&gt;
-      &lt;/use&gt;
-    &lt;/svg&gt;
-  &lt;/div&gt;
-  &lt;div class="tooltip__bubble"&gt;Text&lt;/div&gt;
-&lt;/div&gt;
 
+&lt;div&gt; class="modal"&gt;
+  &lt;div&gt; class="modal__window"&gt;
+    &lt;div&gt; class="modal__cross"&gt;&lt;/div&gt;
+    &lt;div&gt; class="modal__title"&gt;Modal title&lt;/div&gt;
+    &lt;div&gt; class="modal__text"&gt;Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
 												</code></pre>
 
@@ -159,63 +165,80 @@
 
 											<div class="tabs__content tabs__content_css">
 												<pre><code data-language="css">
- .tooltip {
-  position: relative;
-  display: inline-block;
- }
 
- .tooltip_preview {
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal_preview {
+  position: relative;
+  padding: 22px 22px;
+}
+
+.modal__window {
+  background-color: var(--background-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 508px;
+  position: relative;
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+.modal__window_preview {
+  max-width: 240px;
+  padding:20px 20px;
+}
+
+.modal__cross {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
-													
- .tooltip__trigger {
-  width: 24px;
-  height: 24px;
- }
-  .tooltip__icon{
-  width: 100%;
-  height: 100%;
- }
-													
- .tooltip__bubble {
-  display: none;
-  padding: 13px 21px;
-  background: var(--active-background);
-  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-  border-radius: 10px;
-  color: var(--main-control);
+  top: 15px;
+  right: 23px;
+}
+
+.modal__cross:before,
+.modal__cross:after {
+  content: '';
+  width: 1px;
+  height: 9px;
+  position: absolute;
+  background-color: #495057;
+  display: block;
+}
+
+.modal__cross:before {
+  transform: rotate(45deg);
+}
+
+.modal__cross:after {
+  transform: rotate(-45deg);
+}
+
+.modal__title {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #334D6E;
+}
+
+.modal__text {
   font-family: 'Inter';
   line-height: 1.5;
-  text-align: center;
-  white-space: nowrap;
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
- }
-													
- .tooltip__bubble_preview {
-  display: block;
- }
-													
- .tooltip__bubble:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top: 5px solid var(--active-background);
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  color: #495057;
+  margin-top: 14px;
 }
-													
- .tooltip__trigger:hover~.tooltip__bubble {
-  display: block
- }
+
   											</code></pre>
 											</div>
 										</div>
