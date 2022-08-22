@@ -99,20 +99,48 @@
 					</aside>
 					<main class="content__main">
 						<div class="content__inner">
-							<h3 class="content__title" id="modal">Calendar form elements</h3>
+							<h3 class="content__title">Modal dialog</h3>
 							<div class="content__element">
-							  <a class="btn btn_primary btn_modal" href="#modal">Open modal</a>
-    <div class="modal">
-        <div class="modal__window">
-            <div class="modal__cross"></div>
-            <div class="modal__title">Modal title</div>
-            <div class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-        </div>
+								<a class="btn btn_primary btn_modal" href="#modal">Open modal</a>
+								<div class="modal" id="modal" id="close">
+									<div class="modal__window">
+										<a class="modal__cross" href="#close">
+											<svg>
+												<use xlink:href="../assets/images/icons/sprite.svg#cross"></use>
+											</svg>
+										</a>
+										<!-- <div class="modal__title">Modal title</div>
+										<div class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+											Velit
+											officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+											Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+											duis
+											enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+									</div>
+									<div class="modal modal_preview">
+										<div class="modal__window modal__window_preview"> -->
 
-    </div>
+											<div class="input input_preview">
+												<label for="input1" class="input__title input__title_preview">Name</label>
+												<input type="text" class="input__field input__field_preview" id="input1"
+													placeholder="Placeholder">
+
+											</div>
+
+											<div class="input input_preview">
+												<label for="input1" class="input__title input__title_preview">Email</label>
+												<input type="text" class="input__field input__field_preview" id="input1"
+													placeholder="Placeholder">
+
+											</div>
+											<button class="btn btn_primary btn_preview">
+												Submit
+											</button>
+										</div>
+
+
+									</div>
+								</div>
 							</div>
 
 							<div class="content__code">
@@ -126,7 +154,7 @@
 											<div class="tabs__switchers">
 
 												<div class="tabs__switcher">
-<label for="html-tab" class="tabs__title tabs__title_html">HTML</label>
+													<label for="html-tab" class="tabs__title tabs__title_html">HTML</label>
 													<div class="tabs__control"></div>
 
 												</div>
