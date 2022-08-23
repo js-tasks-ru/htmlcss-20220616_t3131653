@@ -3,9 +3,8 @@
 	flex-direction: column;
 	padding-right: 15px;
 }
-
 .input_preview {
-	margin-bottom: 12px;
+
 }
 
 .input__block {
@@ -20,7 +19,7 @@
 	min-width: 350px;
 }
 
-.input__field_preview {
+.input_preview .input__field {
 	min-width: 150px;
 	padding: 8px 15px 8px;
 }
@@ -34,7 +33,7 @@
 	color: var(--alternate-control);
 }
 
-.input__field_preview::placeholder {
+.input_preview .input__field::placeholder {
 	font-size: 14px;
 }
 
@@ -50,7 +49,7 @@
 	padding-bottom: 5px;
 }
 
-.input__title_preview {
+.input_preview .input__title {
 	color: var(--subtitle);
 }
 

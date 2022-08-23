@@ -27,12 +27,13 @@
 	position: relative;
 	border-radius: 8px;
 	padding: 30px 40px;
+	gap:12px;
 }
 
-.modal__window_preview {
+.modal_preview .modal__window  {
 	max-width: 240px;
 	padding: 20px 20px;
-}
+	}
 
 .modal__cross {
 	position: absolute;
