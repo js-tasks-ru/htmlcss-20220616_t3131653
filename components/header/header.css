@@ -1,11 +1,15 @@
 .header {
 	background: var(--background-main);
+	padding: 24px 0 30px;
 }
 
 .header_layout {
 	background: transparent;
-	padding: 24px 0 30px;
+}
 
+.header__top {
+	display: flex;
+	justify-content: space-between;
 }
 
 .header__title {
@@ -16,16 +20,19 @@
 	line-height: 1.28;
 	color: var(--font-primary);
 	margin: 0;
-	padding: 96px 0 77px;
+	padding: 38px 0 40px;
 }
 
-.header__logo {}
+.header__logo {
+	width: 110px;
+	height: 32px;
+	color: var(--main-icon);
+}
 
 .header__nav {
 	display: flex;
 	gap: 56px;
 }
-
 
 .header__menu {
 	display: flex;
@@ -44,7 +51,7 @@
 }
 
 .header__item:hover {
-	color: var( --font-primary);
+	color: var(--font-primary);
 }
 
 .header__themes {}
@@ -54,12 +61,11 @@
 	gap: 12px;
 }
 
-
 .header__lite {
 	width: 24px;
 	height: 24px;
-	color: var(--font-secondary);
-	}
+	color: var(--alternate-control);
+}
 
 .header__dark {
 	width: 24px;

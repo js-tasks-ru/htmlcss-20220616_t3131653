@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- Страница компонента-->
+<html lang="ru">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="/path/to/styles/default.min.css">
+	<script src="/path/to/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+
+	<link href="/assets/css/tricolore.css" rel="stylesheet" type="text/css">
+  <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+
+</head>
+
+<body>
+	<div class="layout">
+		<div class="header header_layout">
+			<div class="container container_flex">
+				<a class="header__logo" href="../index.html">
+					<svg>
+						<use xlink:href="../assets/images/icons/sprite.svg#logo"></use>
+					</svg>
+
+				</a>
+				<div class="header__nav">
+
+					<!-- <nav class="header__menu">
+						<a href="#" class="header__item">Components</a>
+						<a href="#" class="header__item">About</a>
+						<a href="#" class="header__item">Contact</a>
+					</nav> -->
+					<div class="header__themes">
+						<div class="header__theme">
+							<div class="header__lite">
+								<svg>
+									<use xlink:href="../assets/images/icons/sprite.svg#lite"></use>
+								</svg>
+							</div>
+
+							<label class="toggler">
+								<div class="toggler__title"></div>
+								<input type="checkbox" class="toggler__input" id="theme-changer">
+								<div class="toggler__state">
+									<div class="toggler__control">
+										<div class="toggler__switcher"></div>
+									</div>
+
+								</div>
+							</label>
+
+							<div class="header__dark">
+								<svg>
+									<use xlink:href="../assets/images/icons/sprite.svg#dark"></use>
+								</svg>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="center-block">
+			<div class="container container_flex">
+				<div class="content">
+
+					<aside class="sidebar">
+
+						<nav class="sidebar__menu">
+							<div class="sidebar__list">
+								<h4 class="sidebar__title">Elements</h4>
+								<a href="./layout_forms.html" class="sidebar__item-menu">Custom form elements</a>
+								<a href="./layout_histogram.html" class="sidebar__item-menu">Histogram</a>
+								<a href="./layout_avatar.html" class="sidebar__item-menu">Avatar</a>
+							</div>
+							<div class="sidebar__list">
+
+								<h4 class="sidebar__title">Containers</h4>
+								<a href="./layout_tooltip.html" class="sidebar__item-menu">Tooltip</a>
+								<a href="./layout_calendar.html" class="sidebar__item-menu">Calendar form elements</a>
+								<a href="./layout_modal.html" class="sidebar__item-menu">Modal dialog</a>
+							</div>
+							<!-- <div class="sidebar__list">
+								<h4 class="sidebar__title">Templates</h4>
+								<a href="#" class="sidebar__item-menu">Avatar</a>
+								<a href="#" class="sidebar__item-menu">Custom form elements</a>
+								<a href="#" class="sidebar__item-menu">Button</a>
+								<a href="#" class="sidebar__item-menu">Avatar</a>
+								<a href="#" class="sidebar__item-menu">Custom form elements</a>
+								<a href="#" class="sidebar__item-menu">Button</a>
+							</div> -->
+
+					</aside>
+					<main class="content__main">
+						<div class="content__inner">
+							<h3 class="content__title">Tooltip</h3>
+							<div class="content__element">
+								<div class="tooltip">
+									<div class="tooltip__trigger">
+										<svg class="tooltip__icon">
+											<use xlink:href="../assets/images/icons/sprite.svg#question"></use>
+										</svg>
+									</div>
+									<div class="tooltip__bubble">Text</div>
+								</div>
+							</div>
+
+							<div class="content__code">
+								<div class="tabs">
+									<input type="radio" class="tabs__input" id="html-tab" name="choise" checked>
+									<input type="radio" class="tabs__input" id="css-tab" name="choise">
+									<div class="tabs__scroller">
+										<div class="container">
+
+
+											<div class="tabs__switchers">
+
+												<div class="tabs__switcher">
+													<label for="html-tab" class="tabs__title tabs__title_html">HTML</label>
+													<div class="tabs__control"></div>
+
+												</div>
+
+												<div class="tabs__switcher">
+													<label for="css-tab" class="tabs__title tabs__title_css">CSS</label>
+													<div class="tabs__control tabs__control_css"></div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<hr class="tabs__line">
+
+									<div class="tabs__main">
+										<div class="container">
+
+											<div class="tabs__content tabs__content_html">
+												<pre><code data-language="html">
+&lt;div class="tooltip"&gt;
+  &lt;div class="tooltip__trigger"&gt;
+    &lt;svg class="tooltip__icon"&gt;
+      &lt;use xlink:href="../assets/images/icons/sprite.svg#question"&gt;
+      &lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class="tooltip__bubble"&gt;Text&lt;/div&gt;
+&lt;/div&gt;
+
+
+												</code></pre>
+
+											</div>
+
+											<div class="tabs__content tabs__content_css">
+												<pre><code data-language="css">
+ .tooltip {
+  position: relative;
+  display: inline-block;
+ }
+
+ .tooltip_preview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+													
+ .tooltip__trigger {
+  width: 24px;
+  height: 24px;
+ }
+  .tooltip__icon{
+  width: 100%;
+  height: 100%;
+ }
+													
+ .tooltip__bubble {
+  display: none;
+  padding: 13px 21px;
+  background: var(--active-background);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  color: var(--main-control);
+  font-family: 'Inter';
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+ }
+													
+ .tooltip__bubble_preview {
+  display: block;
+ }
+													
+ .tooltip__bubble:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 5px solid var(--active-background);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+													
+ .tooltip__trigger:hover~.tooltip__bubble {
+  display: block
+ }
+  											</code></pre>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</main>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer footer_layout">
+			Reusable component library
+		</div>
+
+
+	</div>
+
+	<script src="../assets/js/rainbow-custom.min.js"></script>
+	<script src="../assets/src/html.js"></script>
+	<script src="../assets/src/css.js"></script>
+</body>
+
+</html>

@@ -4,6 +4,66 @@
 	background: var(--background-main);
 	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 	border-radius: 12px;
-	background-color:var(--background-main);
+	background-color: var(--background-main);
 	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding: 40px;
+	text-decoration: none;
+}
+
+.card_modal {
+	padding: 25px 40px;
+}
+
+
+.card__item {
+	flex: 1 1 auto;
+	position: relative;
+}
+
+.card__align {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	gap: 52px;
+}
+
+
+.card__wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 16px;
+
+}
+
+
+.card__name {
+	font-family: 'Roboto';
+	font-style: normal;
+	color: var(--font-primary);
+	text-align: center;
+	/* padding-top: 25px; */
+}
+
+.card__title {
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 1.2;
+
+	padding-bottom: 6px;
+	text-decoration: none;
+	color: inherit;
+
+}
+
+.card__subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
 }

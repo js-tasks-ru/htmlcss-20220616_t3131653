@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- Страница компонента-->
+<html lang="ru">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="/path/to/styles/default.min.css">
+	<script src="/path/to/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+
+	<link href="/assets/css/tricolore.css" rel="stylesheet" type="text/css">
+	<script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+
+
+</head>
+
+<body>
+	<div class="layout">
+		<div class="header header_layout">
+			<div class="container container_flex">
+				<a class="header__logo" href="../index.html">
+					<svg>
+						<use xlink:href="../assets/images/icons/sprite.svg#logo"></use>
+					</svg>
+
+				</a>
+				<div class="header__nav">
+
+					<!-- <nav class="header__menu">
+						<a href="#" class="header__item">Components</a>
+						<a href="#" class="header__item">About</a>
+						<a href="#" class="header__item">Contact</a>
+					</nav> -->
+					<div class="header__themes">
+						<div class="header__theme">
+							<div class="header__lite">
+								<svg>
+									<use xlink:href="../assets/images/icons/sprite.svg#lite"></use>
+								</svg>
+							</div>
+
+							<label class="toggler">
+								<div class="toggler__title"></div>
+								<input type="checkbox" class="toggler__input" id="theme-changer">
+								<div class="toggler__state">
+									<div class="toggler__control">
+										<div class="toggler__switcher"></div>
+									</div>
+
+								</div>
+							</label>
+
+							<div class="header__dark">
+								<svg>
+									<use xlink:href="../assets/images/icons/sprite.svg#dark"></use>
+								</svg>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="center-block">
+			<div class="container container_flex">
+				<div class="content">
+
+					<aside class="sidebar">
+
+						<nav class="sidebar__menu">
+							<div class="sidebar__list">
+								<h4 class="sidebar__title">Elements</h4>
+								<a href="./layout_forms.html" class="sidebar__item-menu">Custom form elements</a>
+								<a href="./layout_histogram.html" class="sidebar__item-menu">Histogram</a>
+								<a href="./layout_avatar.html" class="sidebar__item-menu">Avatar</a>
+							</div>
+							<div class="sidebar__list">
+
+								<h4 class="sidebar__title">Containers</h4>
+								<a href="./layout_tooltip.html" class="sidebar__item-menu">Tooltip</a>
+								<a href="./layout_calendar.html" class="sidebar__item-menu">Calendar form elements</a>
+								<a href="./layout_modal.html" class="sidebar__item-menu">Modal dialog</a>
+							</div>
+							<!-- <div class="sidebar__list">
+								<h4 class="sidebar__title">Templates</h4>
+								<a href="#" class="sidebar__item-menu">Avatar</a>
+								<a href="#" class="sidebar__item-menu">Custom form elements</a>
+								<a href="#" class="sidebar__item-menu">Button</a>
+								<a href="#" class="sidebar__item-menu">Avatar</a>
+								<a href="#" class="sidebar__item-menu">Custom form elements</a>
+								<a href="#" class="sidebar__item-menu">Button</a>
+							</div> -->
+
+					</aside>
+					<main class="content__main">
+						<div class="content__inner">
+							<h3 class="content__title">Modal dialog</h3>
+							<div class="content__element">
+								<a class="btn btn_primary btn_modal" href="#modal">Open modal</a>
+								<div class="modal" id="modal" id="close">
+									<div class="modal__window">
+										<a class="modal__cross" href="#close">
+											<svg>
+												<use xlink:href="../assets/images/icons/sprite.svg#cross"></use>
+											</svg>
+										</a>
+										<!-- <div class="modal__title">Modal title</div>
+										<div class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+											Velit
+											officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+											Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+											duis
+											enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+									</div>
+									<div class="modal modal_preview">
+										<div class="modal__window modal__window_preview"> -->
+
+											<div class="input input_preview">
+												<label for="input1" class="input__title input__title_preview">Name</label>
+												<input type="text" class="input__field input__field_preview" id="input1"
+													placeholder="Placeholder">
+
+											</div>
+
+											<div class="input input_preview">
+												<label for="input1" class="input__title input__title_preview">Email</label>
+												<input type="text" class="input__field input__field_preview" id="input1"
+													placeholder="Placeholder">
+
+											</div>
+											<button class="btn btn_primary btn_preview">
+												Submit
+											</button>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+							<div class="content__code">
+								<div class="tabs">
+									<input type="radio" class="tabs__input" id="html-tab" name="choise" checked>
+									<input type="radio" class="tabs__input" id="css-tab" name="choise">
+									<div class="tabs__scroller">
+										<div class="container">
+
+
+											<div class="tabs__switchers">
+
+												<div class="tabs__switcher">
+													<label for="html-tab" class="tabs__title tabs__title_html">HTML</label>
+													<div class="tabs__control"></div>
+
+												</div>
+
+												<div class="tabs__switcher">
+													<label for="css-tab" class="tabs__title tabs__title_css">CSS</label>
+													<div class="tabs__control tabs__control_css"></div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<hr class="tabs__line">
+
+									<div class="tabs__main">
+										<div class="container">
+
+											<div class="tabs__content tabs__content_html">
+												<pre><code data-language="html">
+
+&lt;div&gt; class="modal"&gt;
+  &lt;div&gt; class="modal__window"&gt;
+    &lt;div&gt; class="modal__cross"&gt;&lt;/div&gt;
+    &lt;div&gt; class="modal__title"&gt;Modal title&lt;/div&gt;
+    &lt;div&gt; class="modal__text"&gt;Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+												</code></pre>
+
+											</div>
+
+											<div class="tabs__content tabs__content_css">
+												<pre><code data-language="css">
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal_preview {
+  position: relative;
+  padding: 22px 22px;
+}
+
+.modal__window {
+  background-color: var(--background-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 508px;
+  position: relative;
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+.modal__window_preview {
+  max-width: 240px;
+  padding:20px 20px;
+}
+
+.modal__cross {
+  position: absolute;
+  top: 15px;
+  right: 23px;
+}
+
+.modal__cross:before,
+.modal__cross:after {
+  content: '';
+  width: 1px;
+  height: 9px;
+  position: absolute;
+  background-color: #495057;
+  display: block;
+}
+
+.modal__cross:before {
+  transform: rotate(45deg);
+}
+
+.modal__cross:after {
+  transform: rotate(-45deg);
+}
+
+.modal__title {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #334D6E;
+}
+
+.modal__text {
+  font-family: 'Inter';
+  line-height: 1.5;
+  color: #495057;
+  margin-top: 14px;
+}
+
+  											</code></pre>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</main>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer footer_layout">
+			Reusable component library
+		</div>
+
+
+	</div>
+
+	<script src="../assets/js/rainbow-custom.min.js"></script>
+	<script src="../assets/src/html.js"></script>
+	<script src="../assets/src/css.js"></script>
+</body>
+
+</html>

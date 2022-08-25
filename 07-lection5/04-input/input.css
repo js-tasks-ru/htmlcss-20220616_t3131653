@@ -1,7 +1,10 @@
 .input {
 	display: inline-flex;
 	flex-direction: column;
-	
+	padding-right: 15px;
+}
+.input_preview {
+
 }
 
 .input__block {
@@ -16,6 +19,11 @@
 	min-width: 350px;
 }
 
+.input_preview .input__field {
+	min-width: 150px;
+	padding: 8px 15px 8px;
+}
+
 .input__field::placeholder {
 	font-family: 'Inter';
 	font-style: normal;
@@ -23,6 +31,10 @@
 	font-size: 20px;
 	line-height: 1.3;
 	color: var(--alternate-control);
+}
+
+.input_preview .input__field::placeholder {
+	font-size: 14px;
 }
 
 .input__title {
@@ -33,8 +45,12 @@
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
-	color: var(--title-control);
+	color: var(--subtitle);
 	padding-bottom: 5px;
+}
+
+.input_preview .input__title {
+	color: var(--subtitle);
 }
 
 .input__icon {
@@ -63,7 +79,7 @@
 }
 
 .input_focus .input__field {
-	border: 1px solid var(--focus-control);
+	border: 1px solid var(--checked-control);
 	box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
 }
 

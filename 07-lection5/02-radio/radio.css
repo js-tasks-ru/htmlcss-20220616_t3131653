@@ -29,7 +29,7 @@
 .radio__control {
 	width: 28px;
 	height: 28px;
-	border: 1px solid var(--alternate-control);
+	border: 1px solid var(--main-control);
 	border-radius: 14px;
 	position: relative;
 }
@@ -63,10 +63,10 @@
 }
 
 .radio__input:disabled~.radio__state .radio__control {
-	background: var(--alternate-control);
+	background: var(--main-control);
 }
 
 .radio__input:disabled~.radio__state .radio__title {
-	color:  var(--alternate-control);
+	color:  var(--main-control);
 }
 
